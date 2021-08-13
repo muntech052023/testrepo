@@ -1,7 +1,7 @@
 ---
 name: Test Actions
 
-on: 
+on:
   push:
     branches:
       - master
@@ -10,7 +10,7 @@ on:
       - master
 
 jobs:
-  Testing Actions:
+  Testing-Actions:
     runs-on: Ubuntu-lastest
     steps:
       - name: Check out repository
@@ -18,12 +18,10 @@ jobs:
       - name: Setting up python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: "3.9"
       - name: Installing dependencies
         run: |
           pip3 install -r requirements.txt
-      - run: All dependencies are now installed 
+      - run: All dependencies are now installed
       - name: Checking Dependencies
         run: pip3 freeze
-      
-...
