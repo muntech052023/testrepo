@@ -13,17 +13,17 @@ jobs:
   Testing Actions:
     runs-on: Ubuntu-lastest
     steps:
-      name: Check out repository
-      uses: actions/checkout@v2
-      name: Setting up python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.9'
-      name: Installing dependencies
-      run: |
-        pip3 install -r requirements.txt
-      run: All dependencies are now installed 
-      name: Checking Dependencies
-      run: pip3 freeze
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Setting up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Installing dependencies
+        run: |
+          pip3 install -r requirements.txt
+      - run: All dependencies are now installed 
+      - name: Checking Dependencies
+        run: pip3 freeze
       
 ...
