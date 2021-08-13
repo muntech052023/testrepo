@@ -11,7 +11,7 @@ on:
 
 jobs:
   Testing-Actions:
-    runs-on: Ubuntu-lastest
+    runs-on: ubuntu-lastest
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
